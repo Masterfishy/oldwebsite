@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-	text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -58,6 +58,7 @@ section {
     justify-content: center;
     border: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 .hero img {
