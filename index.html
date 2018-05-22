@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Zachary Long Portfolio</title>
+		<title>Zachary Long's Portfolio</title>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-        <div class="hero-image">
-            <section class="hero">
-                <header>
-                    <div class="headshot">
-                        <img src="pic.JPG" alt="Zach's Headshot" />
-                    </div>
-                    <h1>ZACHARY LONG</h1>
-                    <p>Computer Science major at Virginia Tech</p>
-                </header>
-            </section>
-        </div>
+        <header>
+            <h1 class="logo">LOGO</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
 
-        <section>
-            <h1>Resume</h1>
-            <div>
-                <p>Love to be around code and being a part of communities.</p>
-                <p><a href="ZacharyLong_TECHNICAL_RESUME.pdf">Resume</a></p>
+        <div id="home" class="hero">
+            <div class="headshot">
+                <img src="pic.JPG" alt="Zach's Headshot" />
             </div>
-        </section>
-
-        <section>
-            <h1>Projects</h1>
-
-            <h2>Pygame</h2>
-            <ul>
-                <li><a href="">Malamalama</a></li>
-                <li><a href="">Pew</a></li>
-                <li><a href="">Quest</a></li>
-            </ul>
-
-            <h2>Unity</h2>
-            <ul>
-                <li><a href="">Turf Wars Through Time</a></li>
-                <li><a href="">X-Hacker (Global Game Jam)</a></li>
-            </ul>
-        </section>
-
+            <h1>ZACHARY LONG</h1>
+            <p>Computer Science major at Virginia Tech</p>
+        </div>
 	</body>
 </html>
