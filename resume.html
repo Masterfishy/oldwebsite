@@ -2,21 +2,30 @@
 <html>
     <head>
         <title>Zachary Long's Resume Page</title>
-        <link rel="stylesheet" href="" />
+        <link rel="stylesheet" href="resumestyles.css" />
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">LOGO</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+        <header>
+            <!--<h1 class="logo">Logo</h1>-->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
 
-        <h1>Resume</h1>
-        <div>
-            <p>Like to code, like people.</p>
-            <p><a href="ZacharyLong_TECHNICAL_RESUME.pdf">Resume</a></p>
+        <div class="hero">
+            <h1>Me.</h1>
+            <div>
+                <p>Like to code, like people.</p>
+                <p><br /><br />Interested in more of what I got?  Website not formal enough? <br />  Check out my <a href="ZacharyLong_TECHNICAL_RESUME.pdf">Resume</a></p>
+            </div>
         </div>
     </body>
 </html>

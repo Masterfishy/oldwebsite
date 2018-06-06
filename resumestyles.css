@@ -5,22 +5,24 @@
 
 /* Defaults */
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: inherit;
-	font-weight: inherit;
-	font-family: inherit;
-	text-decoration: inherit;
-	line-height: inherit;
-	color: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+    line-height: inherit;
+    color: inherit;
 }
 html, body {
     font-family: "Myriad CAD", Helvetica, sans-serif;
     font-size: 10px;
+    text-align: center;
     line-height: 30px;
     color: white;
-    background-image: url("HZDbanner.jpg");
+
+    background-image: url("rBanner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,23 +30,12 @@ html, body {
     position: relative;
 }
 
-/* General Styling */
+/* Styling */
 body {
 }
 h1 {
-	font-size: 36px;
-	line-height: 50px;
-	font-weight: bold;
-    text-transform: uppercase;
+    font-size: 36px;
 }
-h2 {
-    font-size: 20px;
-    color: #000;
-    line-height: 40px;
-    font-weight: bold;
-}
-
-/* Home Page */
 .hero {
     height: 100vh;
     width: auto;
@@ -53,7 +44,6 @@ h2 {
     justify-content: center;
     border: 0px;
     padding: 0px;
-    
     text-align: center;
     font-family: "Myriad CAD", Helvetica, sans-serif;
     color: white;
@@ -61,23 +51,8 @@ h2 {
     position: relative;
     z-index: 1;
 }
-.hero img {
-    width: 100%;
-    height: 100%;
-}
-
-/* My Image */
-.headshot {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 1s;
-}
-.headshot:hover {
-    transform: rotate(360deg);
+.hero a {
+    font-size: 24px;
 }
 
 /* Hamburger Menu Thing */
@@ -90,6 +65,7 @@ h2 {
     display: flex;
     align-items: center;
 }
+
 .nav-toggle-label span,
 .nav-toggle-label::before,
 .nav-toggle-label::after {
@@ -100,14 +76,17 @@ h2 {
     border-radius: 2px;
     position: page;
 }
+
 .nav-toggle-label::before,
 .nav-toggle-label::after {
     content: '';
     position: absolute;
 }
+
 .nav-toggle-label::before {
     bottom: 7px;
 }
+
 .nav-toggle-label::after {
     top: 7px;
 }
@@ -120,6 +99,7 @@ header {
     position: fixed;
     width: 100%;
 }
+
 nav {
     position: absolute;
     padding-top: 20%;
@@ -127,43 +107,42 @@ nav {
     left: 0;
     width: 100%;
     height: 100vh;
-
     font-size: 24px;
     text-align: center;
-
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
 }
+
 nav ul {
     margin: 0;
     padding: 0;
+    display: inline;
     list-style: none;
 }
+
 nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
-nav a:hover {
-    color: #808080;
-}
+
+    nav a:hover {
+        color: #808080;
+    }
 
 /* Checkbox Functionality */
 .nav-toggle {
     display: none;
 }
+
 .nav-toggle:checked ~ nav {
     display: block;
     background-color: var(--menu);
     transform: scale(1,1);
-}
-
-.about {
-    padding-top: 50px;
-    text-align: center;
 }
