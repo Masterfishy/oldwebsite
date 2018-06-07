@@ -21,8 +21,7 @@ html, body {
     text-align: center;
     line-height: 30px;
     color: white;
-
-    background-image: url("rBanner.jpg");
+    background-image: url("pBanner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +35,7 @@ body {
 h1 {
     font-size: 36px;
 }
+
 .hero {
     height: 100vh;
     width: auto;
@@ -124,8 +124,8 @@ nav a {
     text-transform: uppercase;
 }
 nav a:hover {
-        color: #808080;
-    }
+    color: #808080;
+}
 
 /* Checkbox Functionality */
 .nav-toggle {

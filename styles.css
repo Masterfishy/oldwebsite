@@ -164,6 +164,22 @@ nav a:hover {
 }
 
 .about {
-    padding-top: 50px;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 800px;
+    background-color: rgba(40, 40, 40, 0.75);
+    color: white;
+}
+.about h1 {
+    padding: 25px 0;
     text-align: center;
+}
+.about p {
+    margin: 0 50px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
 }
